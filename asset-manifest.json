@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/koke/static/css/main.db8be571.css",
+    "main.js": "/koke/static/js/main.3b53beec.js",
+    "static/js/787.b66be1b9.chunk.js": "/koke/static/js/787.b66be1b9.chunk.js",
+    "index.html": "/koke/index.html",
+    "main.db8be571.css.map": "/koke/static/css/main.db8be571.css.map",
+    "main.3b53beec.js.map": "/koke/static/js/main.3b53beec.js.map",
+    "787.b66be1b9.chunk.js.map": "/koke/static/js/787.b66be1b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db8be571.css",
+    "static/js/main.3b53beec.js"
+  ]
+}
