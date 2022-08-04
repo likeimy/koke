@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+* {margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+img {display: block;}
+li {list-style: none;}
+a {text-decoration: none; color: black;}
+a:hover {color: black;}
+
+/*---Detail---*/
+#button01, #button02 {display: none;}
+
+#button01:checked ~ .on_off .button01 {
+  display: block;
+  width: 210px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+#button01:checked ~ .on_off .button02 {
+  display: block;
+  width: 170px;
+  height: 50px;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+#button02:checked ~ .on_off .button01 {
+  display: block;
+  width: 170px;
+  height: 50px;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+#button02:checked ~ .on_off .button02 {
+  display: block;
+  width: 210px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+#button01:checked ~ .options_other .subscribe {display: none;}
+#button02:checked ~ .options_other .subscribe {display: block;}
+
+
+#subs01, #subs02, #subs03 {display: none;}
+
+#subs01:checked ~ .subs_label01 {
+  border: none;
+  background-color: #ff6c57;
+  color: white;
+  line-height: 50px;
+}
+#subs01:checked ~ .subs_label02, .subs_label03 {
+  border: 2px solid #ff6c57;
+  box-sizing: border-box;
+  color: #ff6c57;
+}
+
+#subs02:checked ~ .subs_label02 {
+  border: none;
+  background-color: #ff6c57;
+  color: white;
+  line-height: 50px;
+}
+#subs02:checked ~ .subs_label01, .subs_label03 {
+  border: 2px solid #ff6c57;
+  box-sizing: border-box;
+  color: #ff6c57;
+}
+
+#subs03:checked ~ .subs_label03 {
+  border: none;
+  background-color: #ff6c57;
+  color: white;
+  line-height: 50px;
+}
+#subs03:checked ~ .subs_label01, .subs_label02 {
+  border: 2px solid #ff6c57;
+  box-sizing: border-box;
+  color: #ff6c57;
+}
+
+
+
+.more, .close {
+  display: block;
+  width: 250px;
+  height: 50px;
+  background-color: #ff6c57;
+  border-radius: 100px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+}
+
+.more:hover, .close:hover {
+  border: 2px solid #ff6c57;
+  box-sizing: border-box;
+  background-color: white;
+  color: #ff6c57;
+}
+
+.close {display: none;}
+
+#more, #close {display: none;}
+
+#more:checked ~ .details .close {display: block;}
+#more:checked ~ .details .more {display: none;}
+#more:checked ~ .details {height: 7300px;}
+#more:checked ~ .details .gradation {display: none;}
+
+#close:checked ~ .details .more {display: block;}
+#close:checked ~ .details .close {display: none;}
+
+
+
+/*---footer---*/
+#return01, #return02 {display: none;}
+
+#return02:checked ~ .tabs .tab01 {
+  border: none;
+  background-color: #FAF7E8;
+  border-bottom: 1px solid #ccc;
+  color: #999;
+}
+#return02:checked ~ .tabs .tab02 {
+  border-bottom: none;
+  border-top: 2px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background-color: transparent;
+}
+
+#return01:checked ~ .text02 {display: none;}
+#return02:checked ~ .text01 {display: none;}
+
+
+
+/*---sub---*/
+.li:hover .image img {width: 105%;}
+.li:hover .image .hover {display: block;}
+.li:hover .name {text-decoration: underline;}
+
+
+
+/*---main---*/
+.roasterys_li:hover .li_text {
+  transition: all 0.3s;
+  bottom: 0;
+}
